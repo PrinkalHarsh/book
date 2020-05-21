@@ -1,15 +1,14 @@
 import * as React from 'react';
 import { View, Text, Button } from 'react-native';
 
-function LibraryScreen({ navigation }) {
+
+export const LibraryScreen = (props) => {
     return (
       <View>
         <Text>library screen</Text>
         <Button title="Next"
-        onPress={() => navigation.navigate('store')}/>
+        onPress={() => props.navigation.navigate('store')}/>
          <Button title="Go back" onPress={() => navigation.goBack('')} />
       </View>
     );
   }
-
-  export default LibraryScreen;

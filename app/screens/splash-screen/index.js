@@ -1,14 +1,13 @@
 import * as React from 'react';
 import { View, Text, Button } from 'react-native';
 
-function SplashScreen({ navigation }) {
+
+export const SplashScreen = (props) => {
     return (
       <View>
           <Text>Splash screen</Text>
           <Button title="Next"
-        onPress={() => navigation.navigate('onbording')}/>
+        onPress={() => props.navigation.navigate('onbording')}/>
       </View>
     );
-  }
-
-  export default SplashScreen;
+  };
